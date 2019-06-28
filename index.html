@@ -1,145 +1,40 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Layout Commcepta</title>
+	<title>Layout JavaScript</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 	<div id="background">
 
-		<nav class="navbar">
-			<ul class="nav">
-				<li><a href="#">CONTATO</a></li>
-				<li><a href="#">SERVIÇO</a></li>
-				<li><a href="#">EMPRESA</a></li>
-			</ul>
-		</nav>
+		<header class="header">
+			<a href="#"><img src="assets/images/space-box.png"></a>
 
-		<div id="id_container" class="container-all">
+			<nav>
+				<ul class="menu">
+					<li><a href="#">EMPRESA</a></li>
+					<li><a href="#">SERVIÇO</a></li>
+					<li><a href="#">CONTATO</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="IdContainerAll" class="container-all">
 
 			<div class="cards">
 
 				<div class="card card-style selected">
 					<div class="card-content">
 
-						<div class="container">
-							<h4 class="card-g">NOME: </h4>
-							<h4 class="card-g">CARGO: </h4>
-							<h4 class="card-g">IDADE: </h4>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-
-			<div class="cards">
-
-				<div class="card-style item selected">
-					<div class="card-content">
+						<img id="photo" src="">
+						<div id="indicator">1</div>
 
 						<div class="container">
-							<h4><b>nome</b></h4>
-							<p>função</p>
-						</div>
-
-					</div>
-				</div>
-				<div class="card-style item selected">
-					<div class="card-content">
-
-						<div class="container">
-							<h4><b>nome</b></h4>
-							<p>função</p>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="card-style item selected">
-					<div class="card-content">
-
-						<div class="container">
-							<h4><b>nome</b></h4>
-							<p>função</p>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-
-			<div class="cards">
-
-				<div class="card-style item selected">
-					<div class="card-content">
-
-						<div class="container">
-							<h4><b>nome</b></h4>
-							<p>função</p>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="card-style item selected">
-					<div class="card-content">
-
-						<div class="container">
-							<h4><b>nome</b></h4>
-							<p>função</p>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="card-style item selected">
-					<div class="card-content">
-
-						<div class="container">
-							<h4><b>nome</b></h4>
-							<p>função</p>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-
-			<div class="cards">
-
-				<div class="card-style item selected">
-					<div class="card-content">
-
-						<div class="container">
-							<h4><b>nome</b></h4>
-							<p>função</p>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="card-style item selected">
-					<div class="card-content">
-
-						<div class="container">
-							<h4><b>nome</b></h4>
-							<p>função</p>
-						</div>
-
-					</div>
-				</div>
-
-				<div class="card-style item selected">
-					<div class="card-content">
-
-						<div class="container">
-							<h4><b>nome</b></h4>
-							<p>função</p>
+							<h4 class="card-g">NOME: <span id="name"></span></h4>
+							<h4 class="card-g">CARGO: <span id="role"></span></h4>
+							<h4 class="card-g">IDADE: <span id="age"></span></h4>
 						</div>
 
 					</div>
@@ -149,15 +44,8 @@
 
 		</div>
 
-	</div>
 
-
-
-
-
-	</div>
-
-	<script type="text/javascript" src="assets/js/index.js"></script>
+		<script type="text/javascript" src="assets/js/index.js"></script>
 
 </body>
 
