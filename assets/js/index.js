@@ -1,4 +1,4 @@
-var url = 'assets/js/dados.json';
+var url = 'dados.json';
 var elSelected = null;
 var dataItems = [];
 
