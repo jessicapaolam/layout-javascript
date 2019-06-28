@@ -70,6 +70,10 @@ a {
 	margin-bottom: 3%;
 }
 
+.selected {
+	background-color: #14314e;
+}
+
 .card-style:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -85,12 +89,12 @@ a {
 	padding: 15px;
 }
 
-.card-content #indicator {
+.card-content .indicator_item {
 	font-size: 20px;
 	font-weight: 600;
 	border-radius: 100%;
 	position: absolute;
-	left: 107px;
+	margin-left: 104px;
 	background-color: #4dd1d1;
 	width: 38px;
 	height: 33px;
@@ -118,8 +122,16 @@ a {
 	color: #104675;
 }
 
+.selected .container h4 {
+	color: #fff;
+}
+
 .container p {
 	color: #9a9a9a;
+}
+
+.selected .container p {
+	color: #fff;
 }
 
 .container-all {

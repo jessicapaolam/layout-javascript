@@ -35,10 +35,10 @@ function createHtml(index) {
 		htmlItem += '<div class="cards">';
 	}
 
-	htmlItem += '<div id="item_' + index.toString() + '" class="card-style item" onclick="selected(' + index.toString() + ', this)">';
+	htmlItem += '<div id="item_' + index.toString() + '" class="card-style" onclick="selected(' + index.toString() + ', this)">';
 	htmlItem += '<div class="card-content">';
 	htmlItem += '<img src="./assets/images/' + dataItems[index].foto + '">';
-	htmlItem += '<div id="indicator">' + dataItems[index].indicador + '</div>';
+	htmlItem += '<div class="indicator_item">' + dataItems[index].indicador + '</div>';
 	htmlItem += '<div class="container">';
 	htmlItem += '<h4><b>' + dataItems[index].nome + '</b></h4>';
 	htmlItem += '<p>' + dataItems[index].cargo + '</p>';
@@ -55,11 +55,11 @@ function createHtml(index) {
 
 function selected(index) {
 	if (elSelected != null) {
-		elSelected.style.backgroundColor = '#f5f5f5';
+		elSelected.className = "card-style";
 	}
 
 	elSelected = document.getElementById('item_' + index.toString());
-	elSelected.style.backgroundColor = '#14314e';
+	elSelected.className = "card-style selected";
 
 	document.getElementById('photo').setAttribute('src', './assets/images/' + dataItems[index].foto);
 	document.getElementById('name').innerHTML = dataItems[index].nome;
